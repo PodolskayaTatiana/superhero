@@ -20,7 +20,7 @@ def test_entering_a_non_gender_without_profession():
 def lowercase_letters_of_female_gender():
     res = get_superhero("female", False)
     assert not res == True
-#???????????????????????????????????????????
+
 def lowercase_letters_of_female_gender():
     res = get_superhero("male", False)
     assert not res == True
@@ -43,7 +43,6 @@ def test_entering_a_non_work():
     res = get_superhero("Male", 2)
     work = res["work"]["occupation"]
     assert work != "-"
-    #?????????????????????????????
 
 def test_the_height_of_a_man_without_a_job():
     res = get_superhero("Male", False)
@@ -64,18 +63,3 @@ def test_the_height_of_a_woman_with_a_job():
     res = get_superhero("Female", True)
     height = res["appearance"]["height"][1]
     assert not height == False
-
-
-#def test_invalid_inputs():
-#    assert get_superhero("male", "") == False
-#    assert get_superhero("female", "") == False
-#    assert get_superhero("", "") == False
-#    assert get_superhero("123", "") == False
-
-
-
-    # input_validator.py
-
-
-    # input_validator.py
-
